@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Match</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Moo+Lah+Lah&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/back.png">
+</head>
+<body>
+    <img src="images/logo.png">
+    <div class="table">
+        <ul class="cards">
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img1.png" alt="elephant">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img1.png" alt="elephant">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img2.png" alt="giraffe">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img2.png" alt="giraffe">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img3.png" alt="koala">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img3.png" alt="koala">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img4.png" alt="lion">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img4.png" alt="lion">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img5.png" alt="monkey">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img5.png" alt="monkey">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img6.png" alt="panda">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img6.png" alt="panda">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img7.png" alt="rhino">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img7.png" alt="rhino">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img8.png" alt="walrus">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="images/back.png" alt="back">
+                </div>
+                <div class="view back-view">
+                    <img src="images/img8.png" alt="walrus">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="popUp" id="popUp">
+        <div class="popUp-text">
+            <h2>CONGRATS!</h2>
+            <p>You have matched all the cards.<br>
+                Your score is <span>20</span> 
+            </p>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+
+    <div class="popUpFirst" id="popUpFirst">
+        <div class="popUp-text-first">
+            <h2>SAFARI MATCH</h2>
+            <div class="pics">
+                <p>There are 16 cards on the table and your goal is <br>to make pairs with cards which have same pictures on it.</p>
+                <img src="/Card Matching Game/images/match.png">
+                <p>If you flip 2 cards with different pictures on, <br>they will flip back again until you find its pair.</p>
+                <img src="/Card Matching Game/images/nonMatch.png">
+            </div>
+            <div>
+                <p>Try to clear the table with least amount of moves <br>with the least amount of time. Good luck!</p>
+            </div>
+            <button id="close">Close</button>
+        </div>
+    </div>
+
+    <div class="flexContainer">
+        <div class="scoreBoard"><h id="flips">Moves: 0</h></div>
+        <div class="timer">
+            <div class="clock">00:00</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
